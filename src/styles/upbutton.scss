@@ -1,0 +1,20 @@
+.up {
+    z-index: 10;
+    bottom: 1.5vw;
+    right: 4vw;
+    width: 5vw;
+    height: 5vw;
+    background-size: cover;
+    position: absolute;
+    content: '';
+
+    &:hover {
+        cursor: pointer;
+    }
+    
+    video {
+        position: fixed;
+        width: 5vw;
+        height: 5vw;
+    }
+}

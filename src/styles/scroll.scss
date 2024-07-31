@@ -1,0 +1,13 @@
+.scroll {
+    width: 100vw;
+    height: 100vh;
+    max-height: 100vh;
+    max-width: 100vw;
+   
+    overflow: auto;
+}
+
+.scroll-content {
+    background-image: url(../../public/images/background/8.jpg);
+    background-size: cover;
+}

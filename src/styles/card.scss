@@ -1,0 +1,52 @@
+$sizeIndex: calc(1vw + 1vh);
+
+.card {
+    display: flex;
+    height: calc((75vw - $sizeIndex * 1.5 * 2) / 3);
+    width: calc((75vw - $sizeIndex * 1.5 * 2) / 3);
+    border-radius: 10%;
+    cursor: pointer;
+    position: relative;
+    
+    img {
+        transition: .4s;
+        z-index: 0;
+        // background-size: auto;
+    }
+
+    &:hover img{
+        filter: blur(10px);
+        cursor: pointer;
+    }
+
+    .overlay img {
+        filter: none;
+    }
+    
+    p {
+        height: calc((75vw - $sizeIndex * 1.5 * 2) / 3) ;
+        width: calc((75vw - $sizeIndex * 1.5 * 2) / 3);
+        position: absolute;
+        font-size: calc($sizeIndex * 1);
+        padding: calc($sizeIndex * 1);
+        opacity: 0;
+        transition: 1s;
+
+        &:hover {
+            opacity: 1;
+
+        }
+    }
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}

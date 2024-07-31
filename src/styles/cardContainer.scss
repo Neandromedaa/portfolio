@@ -1,0 +1,19 @@
+$sizeIndex: calc(1vw + 1vh);
+
+.container {
+    width: 75vw;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: calc($sizeIndex * 1.5);
+    font-size: calc($sizeIndex * 1);
+    p {
+        font-size: calc($sizeIndex * 0.75);
+    }
+}
+
+.classContainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: calc($sizeIndex * 1.5);
+}

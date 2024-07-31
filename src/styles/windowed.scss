@@ -1,0 +1,64 @@
+$sizeIndex: calc(1vw + 1vh);
+
+@media (max-width: 1500px){
+    .header {
+        height: calc($sizeIndex * 6.6);
+        flex-flow: column;
+        width: 75vw;
+        margin-top: calc($sizeIndex);
+    }
+
+    .header__logo-container {
+        width: 75vw;
+    }
+
+    .header__navigation {
+        width: 75vw;
+        padding-top: 2vh;
+        gap: 0;
+        justify-content: space-between;
+        font-size: calc($sizeIndex * 1.5);
+    }
+
+    .content__profile {
+        margin-top: calc($sizeIndex * -7.6);
+    }
+
+    .content__profile-about {
+        // position: absolute;
+        // min-width: 75vw;
+        // padding-right: 0;
+        // position: relative;
+        // padding-top: calc($sizeIndex * 1.5);
+        // padding-bottom: calc($sizeIndex * 1.5);
+
+        p, h1 {
+            // margin: calc($sizeIndex * 1.5);
+        }
+
+        // &::before {
+        //     z-index: -1;
+        //     content: '';
+        //     height: calc(100% - calc($sizeIndex * 3));
+        //     width: calc(100%);
+        //     position: absolute;
+        //     background: rgba(255, 255, 255, 0.05);
+        //     backdrop-filter: blur(3px);
+        //     border-radius: 15px;
+        // }
+    }
+
+    .scene {
+        height: 100vh;
+    }
+    // .content__profile-showreel{
+    //     width: 100%;
+    //     max-height: 100vh;
+    //     position: relative;
+
+    //     #player {
+    //         width: 75vw;
+    //         border-radius: 20px;
+    //     }
+    // }
+}

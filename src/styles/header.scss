@@ -1,0 +1,40 @@
+$sizeIndex: calc(1vw + 1vh);
+
+.header {
+    display: flex;
+    height: calc($sizeIndex * 6);
+    justify-content: space-between;
+    align-items: center;
+    width: 75vw;
+    margin: auto;
+}
+
+.header__logo-container {
+    display: flex;
+    align-items: center;
+    z-index: 4;
+}
+
+.header__logo {
+    overflow: hidden;
+    height: calc($sizeIndex * 4);
+}
+
+.header__logo-name{
+    padding-left: 1vh;
+    font-family: shuttle_x;
+    font-size: calc($sizeIndex * 1.4);
+}
+
+.header__navigation {
+    z-index: 4;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    gap: calc($sizeIndex * 3);
+    font-size: calc($sizeIndex * 1);    
+} 
+
+.navigation__item {
+    text-decoration: none;
+}
